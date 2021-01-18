@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Sociallinks from "../constants/sociallinks"
 
@@ -24,6 +24,9 @@ const Top = () => {
             his MBA, he has fallen in love with web and mobile application
             development. You can work with him to create something amazing...
           </p>
+          <Link to="/contacts" className="submit-btn btn my-info-link">
+            Work with me
+          </Link>
           <Sociallinks />
         </div>
         <div className="my-image">

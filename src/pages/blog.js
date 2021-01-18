@@ -17,6 +17,9 @@ const Blog = () => {
       <div className="underline"></div>
       {blogs.map(blog => (
         <Link to={`/blogs/${blog.slug}`} key={blog.id} className="blog-section">
+          <div className="blog-img">
+            <Image fluid={blog.image.childImageSharp.fluid} />
+          </div>
           <div className="blog-section-content">
             <small>{blog.date}</small>
             <p className="project-item-title">{blog.title}</p>
@@ -25,12 +28,8 @@ const Blog = () => {
               <div className="category">{blog.category}</div>
             </div>
           </div>
-          <div className="blog-img">
-            <Image fluid={blog.image.childImageSharp.fluid} />
-          </div>
         </Link>
       ))}
-      <div className="line"></div>
     </Layout>
   )
 }

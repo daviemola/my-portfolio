@@ -22,7 +22,6 @@ const Projects = () => {
             <Image fluid={project.image.childImageSharp.fluid} />
           </div>
           <div className="project-content">
-            <span>0{index + 1}</span>
             <p className="project-item-title">{project.title}</p>
             <p>{project.description}</p>
             <div className="project-stacks">
@@ -43,7 +42,6 @@ const Projects = () => {
           </div>
         </div>
       ))}
-      <div className="line"></div>
     </Layout>
   )
 }
