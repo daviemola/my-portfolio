@@ -14,23 +14,26 @@ const Top = () => {
   // console.log(file)
 
   return (
-    <section>
+    <section className="top-section">
+      <h1 className="project-title">About Me</h1>
+      <div className="underline"></div>
+      {/* <p className="subtitle">Hi, I'm Mola!</p> */}
       <div className="top-part">
-        <div className="my-info ">
-          <p className="subtitle">Hi, I'm Mola!</p>
-          <p className="text">
-            David Mola loves to create web applications with attractive user
-            interfaces. Though he is an accountant graduate and currently doing
-            his MBA, he has fallen in love with web and mobile application
-            development. You can work with him to create something amazing...
-          </p>
-          <Link to="/contacts" className="submit-btn btn my-info-link">
-            Work with me
-          </Link>
-          <Sociallinks />
-        </div>
         <div className="my-image">
           <Image fluid={fluid} />
+        </div>
+        <div className="my-info ">
+          <p className="text">
+            Hey David Mola here, I live by the motto{" "}
+            <strong>"Learn, Build and Love."</strong> Meaning, I learn first and
+            build projects with an aim of helping others. Its not how much you
+            know but how what you know helps others. Let's work together and
+            make the world a better place for others.
+          </p>
+          <Link to="/contacts" className="center-btn btn my-info-link">
+            Work with me
+          </Link>
+          <Sociallinks styleClass="top-links" />
         </div>
       </div>
     </section>

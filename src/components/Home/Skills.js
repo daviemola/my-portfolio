@@ -1,53 +1,35 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
+import { FaCode, FaSketch } from "react-icons/fa"
 
 const Skills = () => {
-  const {
-    img: {
-      childImageSharp: { fluid },
-    },
-  } = useStaticQuery(query)
-
   return (
-    <>
-      <h1 className="project-title">Web Dev Skills</h1>
+    <div className="skill-section">
+      <h1 className="project-title">What I do?</h1>
       <div className="underline"></div>
-      <div className="skills-section">
-        <div className="skills-image">
-          <Image fluid={fluid} />
-        </div>
-        <div className="skills-content">
-          <p className="skills-intro">
-            He loves <span>Javascript</span> as well as...
+      <div className="skills-grid">
+        <div className="first-skill">
+          <h3>Front-End Developer</h3>
+          <FaCode className="skills-icon" />
+          <p>
+            I build the visual components of a website using HTML, CSS and
+            JavaScript, make them interactive, responsive and beautiful. I have
+            some experience React js and its frameworks such as Gatsby and
+            NextJs.
           </p>
-          <ol>
-            <li>HTML & CSS</li>
-            <li>Node Js</li>
-            <li>React Js</li>
-            <li>Mongo DB</li>
-            <li>Gatsby Js & more</li>
-          </ol>
-          <p className="text">
-            <strong>MOTTO:</strong> Keep learning.
+        </div>
+        <div className="second-skill">
+          <h3>Back-End Developer</h3>
+          <FaSketch className="skills-icon" />
+          <p>
+            I work with Databases, and ensuring access information from
+            front-end to the backend. As well as collecting information from the
+            front-end and storing in the database. I work with Nodejs, Mongodb,
+            Express Js, mongoose and so on.
           </p>
         </div>
       </div>
-    </>
+    </div>
   )
 }
-
-const query = graphql`
-  {
-    img: file(relativePath: { eq: "skills-img.jpg" }) {
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-          src
-        }
-      }
-    }
-  }
-`
 
 export default Skills

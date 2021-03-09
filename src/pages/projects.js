@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaGithubSquare, FaLink } from "react-icons/fa"
+import { FaExternalLinkSquareAlt, FaGithubSquare } from "react-icons/fa"
 import Layout from "../components/layout/layout"
 import SEO from "../components/seo"
 
@@ -36,7 +36,7 @@ const Projects = () => {
                 <FaGithubSquare className="projects-icon" />
               </a>
               <a href={project.url} className="project-link">
-                <FaLink className="projects-icon" />
+                <FaExternalLinkSquareAlt className="projects-icon" />
               </a>
             </div>
           </div>

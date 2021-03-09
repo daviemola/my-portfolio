@@ -111,15 +111,13 @@ header p {
 /* TOP INDEX PAGE PART */
 .top-part {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   margin-top: 20px;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 30% 70%;
 }
 
 .text {
-  line-height: 1.8rem;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 ol {
@@ -131,14 +129,12 @@ ol li {
   font-size: 1rem;
 }
 
-.my-image {
-  padding-top: 2rem;
-}
-
 .my-image img {
-  border-radius: 50%;
+  border-radius: 5px;
   height: 50px;
   width: 75px;
+  padding: 0.25rem 0.25rem;
+  border: 0.25rem solid var(--colorshade-600);
 }
 
 .subtitle {
@@ -211,6 +207,17 @@ section {
 }
 
 /* Skills Section */
+.skill-section {
+  margin-bottom: 3rem;
+}
+
+.skill-section h3 {
+  text-transform: uppercase;
+}
+
+.skill-section p {
+  text-align: justify;
+}
 
 .skills-section {
   display: grid;
@@ -233,11 +240,32 @@ section {
   color: var(--colorshade-600);
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 2rem;
+}
+
+.first-skill,
+.second-skill {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.25rem;
+  box-shadow: var(--light-shadow);
+}
+
+.skills-icon {
+  font-size: 2rem;
+  color: var(--colorshade-600);
+  margin: 1rem 0;
+}
+
 /* Projects Section */
 
 .project-title {
   text-align: center;
   margin: 0.5rem 0;
+  font-size: 2rem;
 }
 
 .projects-section {
@@ -286,7 +314,7 @@ section {
 }
 
 /* .project-links {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
 } */
 
 .projects-icon {
@@ -296,7 +324,7 @@ section {
 .project-link {
   font-size: 2rem;
   color: var(--colorshade-600);
-  margin-right: 1rem;
+  margin-right: 0.5rem;
 }
 
 /* Blogs Section */
@@ -463,9 +491,17 @@ footer {
     margin-top: 1.3rem;
     display: grid;
     grid-template-columns: 100%;
+    grid-gap: 0;
   }
+
+  .top-section {
+    margin-bottom: 1rem;
+  }
+
   .my-image {
-    display: none;
+    border-radius: 3px;
+    width: 12rem;
+    margin: 0 auto 1rem auto;
   }
   .container {
     max-width: 1000px;
@@ -475,10 +511,11 @@ footer {
   .image {
     padding: 0;
   }
-  .skills-section {
+  .skills-grid {
     display: grid;
     grid-template-columns: 100%;
   }
+
   .projects-section {
     display: grid;
     grid-template-columns: 100%;
@@ -486,10 +523,26 @@ footer {
   .blog-section {
     display: grid;
     grid-template-columns: 100%;
+    grid-gap: 0px;
   }
-
+  .blog-section-content {
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   .project-stacks {
     margin-top: 1rem;
     width: 100%;
+  }
+  .my-info {
+    text-align: center;
+  }
+  section .underline {
+    margin-bottom: 1rem;
+  }
+  .top-links {
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    padding-top: 2rem;
   }
 }

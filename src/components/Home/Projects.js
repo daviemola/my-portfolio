@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
-import { FaGithubSquare, FaLink } from "react-icons/fa"
+import { FaExternalLinkSquareAlt, FaGithubSquare } from "react-icons/fa"
 
 const Projects = () => {
   const data = useStaticQuery(query)
@@ -11,7 +11,7 @@ const Projects = () => {
 
   return (
     <>
-      <h1 className="project-title">Best Projects</h1>
+      <h1 className="project-title">My Best Projects</h1>
       <div className="underline"></div>
       {projects.map((project, index) => (
         <div className="projects-section" key={index}>
@@ -33,7 +33,7 @@ const Projects = () => {
                 <FaGithubSquare className="projects-icon" />
               </a>
               <a href={project.url} className="project-link">
-                <FaLink className="projects-icon" />
+                <FaExternalLinkSquareAlt className="projects-icon" />
               </a>
             </div>
           </div>

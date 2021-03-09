@@ -9,15 +9,15 @@ const contacts = () => {
       <h1 className="project-title">Contacts</h1>
       <div className="underline"></div>
       <p>
-        You have a project, you think he might play a role in bringing to life.
-        Or maybe a suggestion, or any comment that might be useful. Do not
-        hesitate. Get in touch. He will try to get back to you as soon as
+        Do you have a project, you think I might play a role in bringing to
+        life? Or maybe a suggestion, or any comment that might be useful. Do not
+        hesitate. Get in touch below. I will try to get back to you as soon as
         possible.
       </p>
       <section className="contact-page">
         <article className="contact-form">
           <h3>Get in Touch</h3>
-          <form action="https://formspree.io/YOUR_ID" method="POST">
+          <form action="https://formspree.io/f/xgepdoqo" method="POST">
             <div className="form-group">
               <input
                 type="text"
